@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Lista de contactos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"> <img src="logo.png" alt="logocentral" class="logo" />  
+        <h1>Contact List</h1>
+        
+        <input type="text" id="nombre" placeholder="Input your name">
+        <input type="text" id="apellido" placeholder="Input your last name">
+        <input type="text" id="telefono" placeholder="Input your phone number">
+        <input type="text" id="ciudad" placeholder="Input your city">
+        <input type="text" id="correo" placeholder="Input your address">
+        
+        <div class="genero">
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Female</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Male</label>
+        </div>
+
+        <button id="agregar">ADD</button>
+
+        <div id="loading-spinner" style="display: none;">Cargando...</div>
+
+        <ul id="lista-contactos"></ul>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
