@@ -57,9 +57,9 @@ btnAgregar.addEventListener("click", function() {
         return;
     }
  
-mostrarSpinner();
+    mostrarSpinner();
  
-        setTimeout(function() {
+    setTimeout(function() {
         const contacto = {
             nombre:   document.getElementById("nombre").value.trim(),
             apellido: document.getElementById("apellido").value.trim(),
@@ -73,7 +73,6 @@ mostrarSpinner();
         contactos.push(contacto);
         guardarContactos(contactos);
  
-        // Limpiar los campos
         document.getElementById("nombre").value   = "";
         document.getElementById("apellido").value = "";
         document.getElementById("telefono").value = "";
@@ -85,7 +84,6 @@ mostrarSpinner();
         mostrarContactos();
     }, 1000);
 });
- 
  
 function eliminar(indice) {
     if (!confirm("¿Deseas eliminar este contacto?")) return;
